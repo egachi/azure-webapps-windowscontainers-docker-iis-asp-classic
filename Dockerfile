@@ -1,5 +1,5 @@
 # escape=`
-FROM microsoft/iis
+FROM microsoft/iis:10.0.14393.206
 SHELL ["powershell", "-Command", "$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue'; $VerbosePreference = 'Continue'; "]
 
 RUN Install-WindowsFeature Web-ASP; `
